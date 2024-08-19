@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class='calculator'>
+        <h1>Simple calculator</h1>
+        <input type='text' id='showData' placeholder='0' disabled/>
+        
+            <div class="align-section-calculator">
+                <div class='section-calc'>
+                    <button onclick='addData("7")' class="number">7</button>
+                    <button onclick='addData("8")' class="number">8</button>
+                    <button onclick='addData("9")' class="number">9</button>
+                    <button onclick='addData("/")' class="number operator">/</button>
+                </div>
+                <div class='section-calc'>
+                    <button onclick='addData("4")' class="number">4</button>
+                    <button onclick='addData("5")' class="number">5</button>
+                    <button onclick='addData("6")' class="number">6</button>
+                    <button onclick='addData("*")' class="number operator">x</button>
+                </div>
+                <div class='section-calc'>
+                    <button onclick='addData("1")' class="number">1</button>
+                    <button onclick='addData("2")' class="number">2</button>
+                    <button onclick='addData("3")' class="number">3</button>  
+                    <button onclick='addData("-")' class="number operator">-</button>
+                </div>
+                <div class='section-calc'>
+                    <button onclick='clearData()' class="number clr">C</button>
+                    <button onclick='addData("0")' class="number">0</button>
+                    <button onclick='addData(".")' class="number">.</button>
+                    <button onclick='addData("+")' class="number operator">+</button>
+                </div>
+            </div>
+            <button onclick='addResult()' id="result">=</button>
+        
+      </div>
+      
+      
+
+      
+    <script src="./index.js"></script>
+</body>
+</html>
